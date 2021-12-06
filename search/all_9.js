@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['line_46',['Line',['../structLine.html',1,'']]],
-  ['logmessage_47',['logMessage',['../classDuTLogger.html#abd1b532e3be08fa7d886b9daa2be7e62',1,'DuTLogger::logMessage(std::string msg, LOG_LEVEL level)'],['../classDuTLogger.html#af472ac89ae956db381b94bc944069df4',1,'DuTLogger::logMessage(std::string msg, LOG_LEVEL level, bool writeToFile)']]],
-  ['logwithlevel_48',['logWithLevel',['../classDuTLogger.html#a350a388af6bd6d8d334ad6a8d4a1c5da',1,'DuTLogger']]]
+  ['line_58',['Line',['../structLine.html',1,'']]],
+  ['loadfromfile_59',['loadFromFile',['../classsim__interface_1_1SystemConfig.html#a97531ce3b2c5922a7dd0d7cf58b42cc0',1,'sim_interface::SystemConfig']]],
+  ['logevent_60',['logEvent',['../classDuTLogger.html#a8114c09c6e023f973d3b08b6f02ced36',1,'DuTLogger']]],
+  ['loggerconfig_61',['LoggerConfig',['../classLoggerConfig.html',1,'LoggerConfig'],['../classsim__interface_1_1SystemConfig.html#a4e423036f9896fcc88331f22e5d843f2',1,'sim_interface::SystemConfig::loggerConfig()'],['../classLoggerConfig.html#a281bca410d17550ba6123c8fdb6189b1',1,'LoggerConfig::LoggerConfig()=default'],['../classLoggerConfig.html#a6409b51b2091ea7be94c34e9e6deda54',1,'LoggerConfig::LoggerConfig(bool enableDebugMode, std::string pathConsoleLog, std::string pathDataLog, int fileBackupCount, LOG_LEVEL fileLogLevel, LOG_LEVEL consoleLogLevel)']]],
+  ['logmessage_62',['logMessage',['../classDuTLogger.html#a9758a49895c8b32767f74e4b03a0f9d6',1,'DuTLogger::logMessage(const std::string &amp;msg, LOG_LEVEL level)'],['../classDuTLogger.html#a8d5cee2616636923ebc8dae0c11e13d9',1,'DuTLogger::logMessage(const std::string &amp;msg, LOG_LEVEL level, bool writeToFile)']]]
 ];

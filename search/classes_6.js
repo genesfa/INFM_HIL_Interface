@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['sharedqueue_98',['SharedQueue',['../classsim__interface_1_1SharedQueue.html',1,'sim_interface']]],
-  ['simcomhandler_99',['SimComHandler',['../classsim__interface_1_1SimComHandler.html',1,'sim_interface']]],
-  ['simevent_100',['SimEvent',['../classsim__interface_1_1SimEvent.html',1,'sim_interface']]],
-  ['simtodutinterface_101',['SimToDuTInterface',['../classsim__interface_1_1SimToDuTInterface.html',1,'sim_interface']]]
+  ['message_145',['Message',['../classdummy__dut_1_1rest_1_1model_1_1Message.html',1,'dummy_dut::rest::model']]],
+  ['messagewithtimestamp_146',['MessageWithTimestamp',['../classdummy__dut_1_1rest_1_1messages_1_1MessageWithTimestamp.html',1,'dummy_dut::rest::messages']]]
 ];

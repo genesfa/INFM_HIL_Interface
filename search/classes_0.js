@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['canconnector_78',['CANConnector',['../classsim__interface_1_1dut__connector_1_1can_1_1CANConnector.html',1,'sim_interface::dut_connector::can']]],
-  ['connectorconfig_79',['ConnectorConfig',['../classsim__interface_1_1dut__connector_1_1ConnectorConfig.html',1,'sim_interface::dut_connector']]],
-  ['connectorinfo_80',['ConnectorInfo',['../classsim__interface_1_1dut__connector_1_1ConnectorInfo.html',1,'sim_interface::dut_connector']]]
+  ['bcmmsgmultipleframescan_121',['bcmMsgMultipleFramesCan',['../structbcmMsgMultipleFramesCan.html',1,'']]],
+  ['bcmmsgmultipleframescanfd_122',['bcmMsgMultipleFramesCanFD',['../structbcmMsgMultipleFramesCanFD.html',1,'']]],
+  ['bcmmsgsingleframecan_123',['bcmMsgSingleFrameCan',['../structbcmMsgSingleFrameCan.html',1,'']]],
+  ['bcmmsgsingleframecanfd_124',['bcmMsgSingleFrameCanFD',['../structbcmMsgSingleFrameCanFD.html',1,'']]]
 ];
