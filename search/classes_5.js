@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['line_143',['Line',['../structLine.html',1,'']]],
-  ['loggerconfig_144',['LoggerConfig',['../classLoggerConfig.html',1,'']]]
+  ['line_158',['Line',['../structLine.html',1,'']]],
+  ['loggerconfig_159',['LoggerConfig',['../classLoggerConfig.html',1,'']]]
 ];
