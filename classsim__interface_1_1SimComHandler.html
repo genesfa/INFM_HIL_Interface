@@ -96,10 +96,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2064c6154aa11da9f9d0c815f45cd270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3045aec9762d50b256b8c27058f9ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#a9e3045aec9762d50b256b8c27058f9ab">run</a> ()</td></tr>
 <tr class="separator:a9e3045aec9762d50b256b8c27058f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270a4f0f69406bc27081457eedfdfed8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#a270a4f0f69406bc27081457eedfdfed8">getConfig</a> (std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1rest__dummy_1_1RESTConnectorConfig.html">sim_interface::dut_connector::rest_dummy::RESTConnectorConfig</a> * &gt; *RESTConnectorVektor, std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1can_1_1CANConnectorConfig.html">sim_interface::dut_connector::can::CANConnectorConfig</a> * &gt; *CanConnectorVektor)</td></tr>
-<tr class="separator:a270a4f0f69406bc27081457eedfdfed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65dbe14f78ee678aa626db9d06556e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#a65dbe14f78ee678aa626db9d06556e13">getConfig</a> (std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1ConnectorConfig.html">sim_interface::dut_connector::ConnectorConfig</a> * &gt; *connectorConfig)</td></tr>
-<tr class="separator:a65dbe14f78ee678aa626db9d06556e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b029325b2067555ffd23991895d1ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#aa3b029325b2067555ffd23991895d1ac">getConfig</a> (std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1rest__dummy_1_1RESTConnectorConfig.html">sim_interface::dut_connector::rest_dummy::RESTConnectorConfig</a> * &gt; *RESTConnectorVektor, std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1can_1_1CANConnectorConfig.html">sim_interface::dut_connector::can::CANConnectorConfig</a> * &gt; *CanConnectorVektor, std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1v2x_1_1V2XConnectorConfig.html">sim_interface::dut_connector::v2x::V2XConnectorConfig</a> * &gt; *V2XConnectorVektor)</td></tr>
+<tr class="separator:aa3b029325b2067555ffd23991895d1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accc9dff9eba704a7c7a1c241ec2f4231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">connectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#accc9dff9eba704a7c7a1c241ec2f4231">resolveConnectorTypeForSwitch</a> (std::string connectorTypeS)</td></tr>
 <tr class="separator:accc9dff9eba704a7c7a1c241ec2f4231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -181,32 +179,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a65dbe14f78ee678aa626db9d06556e13" name="a65dbe14f78ee678aa626db9d06556e13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65dbe14f78ee678aa626db9d06556e13">&#9670;&nbsp;</a></span>getConfig() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sim_interface::SimComHandler::getConfig </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1ConnectorConfig.html">sim_interface::dut_connector::ConnectorConfig</a> * &gt; *&#160;</td>
-          <td class="paramname"><em>connectorConfig</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Get the various ConnectorTypes from the config.xml </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">*connectorConfig</td><td>Standardvector from Type ConnectorConfig Pointer Problem: The Standardvector has only objects from type ConnectorConfig and not form the specifiic objectts e.g. RESTConnectorConfig </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a270a4f0f69406bc27081457eedfdfed8" name="a270a4f0f69406bc27081457eedfdfed8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a270a4f0f69406bc27081457eedfdfed8">&#9670;&nbsp;</a></span>getConfig() <span class="overload">[2/2]</span></h2>
+<a id="aa3b029325b2067555ffd23991895d1ac" name="aa3b029325b2067555ffd23991895d1ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b029325b2067555ffd23991895d1ac">&#9670;&nbsp;</a></span>getConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +195,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1can_1_1CANConnectorConfig.html">sim_interface::dut_connector::can::CANConnectorConfig</a> * &gt; *&#160;</td>
-          <td class="paramname"><em>CanConnectorVektor</em>&#160;</td>
+          <td class="paramname"><em>CanConnectorVektor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classsim__interface_1_1dut__connector_1_1v2x_1_1V2XConnectorConfig.html">sim_interface::dut_connector::v2x::V2XConnectorConfig</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>V2XConnectorVektor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,7 +293,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 17 2021 20:49:31 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Dec 17 2021 22:18:10 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
