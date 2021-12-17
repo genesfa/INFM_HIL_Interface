@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['socketsimaddresspub_281',['socketSimAddressPub',['../classsim__interface_1_1SystemConfig.html#a6206357fe92d017661c4bff958d4834d',1,'sim_interface::SystemConfig']]],
-  ['socketsimaddressreciverconfig_282',['socketSimAddressReciverConfig',['../classsim__interface_1_1SystemConfig.html#ac2da35b8d4b80a8891400eb8cc1064ff',1,'sim_interface::SystemConfig']]],
-  ['socketsimaddresssub_283',['socketSimAddressSub',['../classsim__interface_1_1SystemConfig.html#a89afdecff21584ec38fe19a811301561',1,'sim_interface::SystemConfig']]]
+  ['periodicoperations_0',['periodicOperations',['../classsim__interface_1_1dut__connector_1_1ConnectorConfig.html#a6ab4aee84ecd1a0f8fb22e4097e58860',1,'sim_interface::dut_connector::ConnectorConfig']]],
+  ['periodictimerenabled_1',['periodicTimerEnabled',['../classsim__interface_1_1dut__connector_1_1ConnectorConfig.html#ab22cfa188a247771db532ce056f492da',1,'sim_interface::dut_connector::ConnectorConfig']]],
+  ['port_2',['port',['../classsim__interface_1_1dut__connector_1_1rest__dummy_1_1RESTConnectorConfig.html#a4a9f74086886c833eb3623c91749eb84',1,'sim_interface::dut_connector::rest_dummy::RESTConnectorConfig']]]
 ];

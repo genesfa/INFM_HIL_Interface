@@ -1,8 +1,0 @@
-<map id="sim_interface::dut_connector::rest_dummy::RESTConnectorConfig" name="sim_interface::dut_connector::rest_dummy::RESTConnectorConfig">
-<area shape="rect" id="node1" title=" " alt="" coords="5,395,188,451"/>
-<area shape="rect" id="node2" href="$classsim__interface_1_1dut__connector_1_1ConnectorConfig.html" title=" " alt="" coords="134,304,342,345"/>
-<area shape="rect" id="node3" title=" " alt="" coords="334,185,497,227"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="229,96,316,123"/>
-<area shape="rect" id="node6" title=" " alt="" coords="521,193,686,219"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="203,5,342,47"/>
-</map>
