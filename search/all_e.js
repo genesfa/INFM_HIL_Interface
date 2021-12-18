@@ -5,7 +5,7 @@ var searchData=
   ['registeredinterface_2',['RegisteredInterface',['../classdummy__dut_1_1rest_1_1impl_1_1RegisteredInterface.html',1,'dummy_dut::rest::impl']]],
   ['removeinterfacecallback_3',['removeInterfaceCallback',['../classdummy__dut_1_1rest_1_1impl_1_1RegisteredInterface.html#aa6f9ab3659395647d859b0bdc7414f3f',1,'dummy_dut::rest::impl::RegisteredInterface']]],
   ['replaceall_4',['replaceAll',['../classEventVisitor.html#a520b999c641b36e55fa0a9336569c9bf',1,'EventVisitor']]],
-  ['resolveconnectortypeforswitch_5',['resolveConnectorTypeForSwitch',['../classsim__interface_1_1SimComHandler.html#accc9dff9eba704a7c7a1c241ec2f4231',1,'sim_interface::SimComHandler']]],
+  ['resolveconnectortypeforswitch_5',['resolveConnectorTypeForSwitch',['../classsim__interface_1_1SimComHandler.html#a31eb3f0b64b6487c1fafda21f7d12c1d',1,'sim_interface::SimComHandler']]],
   ['rest_20api_20server_20for_20hil_20_2d_20rest_20dummy_20dut_6',['REST API Server for HIL - REST Dummy DuT',['../md_Dummy_DuT_REST_Dummy_DuT_generatedAPI_README.html',1,'']]],
   ['rest_20dummy_20connector_7',['REST Dummy Connector',['../md_Sim_To_DuT_Interface_DuT_Connectors_RESTDummyConnector_ReadMe.html',1,'']]],
   ['rest_20dummy_20dut_8',['REST Dummy DuT',['../md_Dummy_DuT_REST_Dummy_DuT_ReadMe.html',1,'']]],
