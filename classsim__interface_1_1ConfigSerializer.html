@@ -73,18 +73,85 @@ $(function() {
   <div class="headertitle"><div class="title">sim_interface::ConfigSerializer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;ConfigSerializer.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d5ab0059466bfdf200dff6a607d70e5"><td class="memTemplParams" colspan="2"><a id="a7d5ab0059466bfdf200dff6a607d70e5" name="a7d5ab0059466bfdf200dff6a607d70e5"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7d5ab0059466bfdf200dff6a607d70e5"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>deserialize</b> (std::istringstream &amp;ifs, const std::string &amp;objName, T *obj)</td></tr>
+<tr class="memitem:a7d5ab0059466bfdf200dff6a607d70e5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7d5ab0059466bfdf200dff6a607d70e5"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1ConfigSerializer.html#a7d5ab0059466bfdf200dff6a607d70e5">deserialize</a> (std::istringstream &amp;ifs, const std::string &amp;objName, T *obj)</td></tr>
 <tr class="separator:a7d5ab0059466bfdf200dff6a607d70e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a609accb2b46e2b1a23066a0c7fb62b11"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a609accb2b46e2b1a23066a0c7fb62b11"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1ConfigSerializer.html#a609accb2b46e2b1a23066a0c7fb62b11">serialize</a> (const std::string &amp;file, const std::string &amp;objName, T &amp;obj)</td></tr>
 <tr class="separator:a609accb2b46e2b1a23066a0c7fb62b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p ><a class="el" href="classsim__interface_1_1ConfigSerializer.html">ConfigSerializer</a>: This class is for de-/ serializing the different connectorConfig types and overwrites the boost:serialization methods </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>Templates for any type, so that the following methods can be used by them </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7d5ab0059466bfdf200dff6a607d70e5" name="a7d5ab0059466bfdf200dff6a607d70e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5ab0059466bfdf200dff6a607d70e5">&#9670;&nbsp;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void sim_interface::ConfigSerializer::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">std::istringstream &amp;&#160;</td>
+          <td class="paramname"><em>ifs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>objName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >method:deserialize </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&amp;ifs</td><td>address of an input stringstream </td></tr>
+    <tr><td class="paramname">&amp;objName</td><td>address of a string </td></tr>
+    <tr><td class="paramname">*obj</td><td>pointer of any type of object</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>if: when the input string stream is available exception handling: catching archive exception and start <a class="el" href="classsim__interface_1_1InterfaceLogger.html">InterfaceLogger</a>: </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iss</td><td>create an input stringstream </td></tr>
+    <tr><td class="paramname">ia</td><td>create an xml input archive with the input stringstream and no header deserialize now the object else: start <a class="el" href="classsim__interface_1_1InterfaceLogger.html">InterfaceLogger</a>: </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a609accb2b46e2b1a23066a0c7fb62b11" name="a609accb2b46e2b1a23066a0c7fb62b11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a609accb2b46e2b1a23066a0c7fb62b11">&#9670;&nbsp;</a></span>serialize()</h2>
 
@@ -137,11 +204,10 @@ template&lt;typename T &gt; </div>
 </dl>
 <p>if: when the output file stream is available </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">oa</td><td>create an xml output archive with the output stringstream and no header serialize now the object in the outputarchive and close file</td></tr>
+    <tr><td class="paramname">oa</td><td>create an xml output archive with the output stringstream and no header serialize now the object in the outputarchive and close file else: start <a class="el" href="classsim__interface_1_1InterfaceLogger.html">InterfaceLogger</a>: </td></tr>
   </table>
   </dd>
 </dl>
-<p>else: start <a class="el" href="classsim__interface_1_1InterfaceLogger.html">InterfaceLogger</a>: </p>
 
 </div>
 </div>
@@ -151,7 +217,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 19 2021 17:25:03 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Dec 19 2021 20:35:30 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
