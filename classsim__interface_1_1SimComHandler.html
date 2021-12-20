@@ -103,17 +103,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe798afe1d329de098c0740feb3e0c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31eb3f0b64b6487c1fafda21f7d12c1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">connectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#a31eb3f0b64b6487c1fafda21f7d12c1d">resolveConnectorTypeForSwitch</a> (std::string connectorTypeS)</td></tr>
 <tr class="separator:a31eb3f0b64b6487c1fafda21f7d12c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3045aec9762d50b256b8c27058f9ab"><td class="memItemLeft" align="right" valign="top"><a id="a9e3045aec9762d50b256b8c27058f9ab" name="a9e3045aec9762d50b256b8c27058f9ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
+<tr class="memitem:a9e3045aec9762d50b256b8c27058f9ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#a9e3045aec9762d50b256b8c27058f9ab">run</a> ()</td></tr>
 <tr class="separator:a9e3045aec9762d50b256b8c27058f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185a267fb516a51ffd47e23a29314839"><td class="memItemLeft" align="right" valign="top"><a id="a185a267fb516a51ffd47e23a29314839" name="a185a267fb516a51ffd47e23a29314839"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unbind</b> ()</td></tr>
-<tr class="separator:a185a267fb516a51ffd47e23a29314839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad48b007a2d85d05a69f6e41035b03524"><td class="memItemLeft" align="right" valign="top"><a id="ad48b007a2d85d05a69f6e41035b03524" name="ad48b007a2d85d05a69f6e41035b03524"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect</b> ()</td></tr>
-<tr class="separator:ad48b007a2d85d05a69f6e41035b03524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c95fd99165395bc2041a7055bc7b1fa"><td class="memItemLeft" align="right" valign="top"><a id="a4c95fd99165395bc2041a7055bc7b1fa" name="a4c95fd99165395bc2041a7055bc7b1fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr>
+<tr class="memitem:aed124bbab4208d794ab4208468164bf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#aed124bbab4208d794ab4208468164bf0">unbindPublisher</a> ()</td></tr>
+<tr class="separator:aed124bbab4208d794ab4208468164bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9779048b71d82cef9e3590ea6fd19954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#a9779048b71d82cef9e3590ea6fd19954">disconnectSubscriber</a> ()</td></tr>
+<tr class="separator:a9779048b71d82cef9e3590ea6fd19954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02de89ef0b01c07a80be3859201af652"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#a02de89ef0b01c07a80be3859201af652">disconnectReceiveConfig</a> ()</td></tr>
+<tr class="separator:a02de89ef0b01c07a80be3859201af652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c95fd99165395bc2041a7055bc7b1fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsim__interface_1_1SimComHandler.html#a4c95fd99165395bc2041a7055bc7b1fa">close</a> ()</td></tr>
 <tr class="separator:a4c95fd99165395bc2041a7055bc7b1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -167,25 +165,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr
 </div><div class="memdoc">
 <p >Constructor: Create a new handler. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">queueSimToInterface</td><td>A queue to communicate with the interface. </td></tr>
+    <tr><td class="paramname">*interface</td><td>A pointer to communicate with the interface. </td></tr>
     <tr><td class="paramname">config</td><td>System configuration. </td></tr>
-    <tr><td class="paramname">socketSimPub_</td><td>Create socket for publisher for messages to simulation </td></tr>
-    <tr><td class="paramname">socketSimSub_</td><td>Create socket for subscriber for messages from simulation </td></tr>
-    <tr><td class="paramname">socketSimSubConfig_</td><td>Create socket for subscriber for xml-Configuration from simulation</td></tr>
+    <tr><td class="paramname">socketSimPub_</td><td>Create socket for publishing messages to simulation </td></tr>
+    <tr><td class="paramname">socketSimSub_</td><td>Create socket for subscribing messages from simulation </td></tr>
+    <tr><td class="paramname">socketSimSubConfig_</td><td>Create socket for subscribing xml-configuration from simulation</td></tr>
   </table>
   </dd>
 </dl>
-<p>Configure Sockets </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Configure sockets with the addresses from the config </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">socketSimAddressPub</td><td>String for the address socket for publisher to simulation </td></tr>
-    <tr><td class="paramname">socketSimAddressSub</td><td>String for the address socket for subsriber from simulation </td></tr>
-    <tr><td class="paramname">socketSimAddressReciverConfig</td><td>String for the address socket for subscriber for xml-Configuration from simulation </td></tr>
-    <tr><td class="paramname">context_recConfig</td><td>Defines the context of the zmq socket xml-Configuration</td></tr>
+    <tr><td class="paramname">context_recConfig</td><td>Defines the context of the zmq socket for the xml-Configuration Set the sockets to subscriber sockets and listen to any String</td></tr>
   </table>
   </dd>
 </dl>
-<p>setsockopt: Set the sockets to subscriber sockets and listen to any String</p>
-<p >Open connecting of the sockets: Bind: Publisher sockets have to bind to the address Connect: Subscriber sockets have to connect </p>
+<p>Open connecting of the sockets: Start Logger for connecting the sockets Bind: Publisher sockets have to bind to the address Connect: Subscriber sockets have to connect </p>
 
 </div>
 </div>
@@ -203,11 +197,65 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Destroys the handler and stops all threads. </p>
+<p >Unbinds, disconnects and closes the sockets Stops all threads and destroys the handler </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4c95fd99165395bc2041a7055bc7b1fa" name="a4c95fd99165395bc2041a7055bc7b1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c95fd99165395bc2041a7055bc7b1fa">&#9670;&nbsp;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sim_interface::SimComHandler::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >close all sockets </p>
+
+</div>
+</div>
+<a id="a02de89ef0b01c07a80be3859201af652" name="a02de89ef0b01c07a80be3859201af652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02de89ef0b01c07a80be3859201af652">&#9670;&nbsp;</a></span>disconnectReceiveConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sim_interface::SimComHandler::disconnectReceiveConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >disconnect the subscriber config socket --&gt; from simulation </p>
+
+</div>
+</div>
+<a id="a9779048b71d82cef9e3590ea6fd19954" name="a9779048b71d82cef9e3590ea6fd19954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9779048b71d82cef9e3590ea6fd19954">&#9670;&nbsp;</a></span>disconnectSubscriber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sim_interface::SimComHandler::disconnectSubscriber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >disconnect the subscriber socket --&gt; from simulation </p>
+
+</div>
+</div>
 <a id="abe798afe1d329de098c0740feb3e0c89" name="abe798afe1d329de098c0740feb3e0c89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe798afe1d329de098c0740feb3e0c89">&#9670;&nbsp;</a></span>getConfig()</h2>
 
@@ -222,36 +270,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Get the various ConnectorTypes from the config.xml </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">*RESTConnectorVektor</td><td>Standardvector from Type RESTConnectorConfig Pointer </td></tr>
-    <tr><td class="paramname">*CanConnectorVektor</td><td>Standardvector from Type CanConnectorConfig Pointer </td></tr>
-    <tr><td class="paramname">*V2XConnectorVektor</td><td>Standardvector from Type V2XConnectorConfig Pointer</td></tr>
-    <tr><td class="paramname">*reply</td><td>zmq message_t, which contains serialized data from the xml-config Receive the serialized data from the xml-config with exception-handling</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Get the various ConnectorTypes from the config.xml </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">*buf</td><td>Buffer with the serialized string </td></tr>
-    <tr><td class="paramname">*tree</td><td>Property tree for deserialize the xml-config </td></tr>
-    <tr><td class="paramname">*t</td><td>output stringstream for writing the buffer in it </td></tr>
-    <tr><td class="paramname">s</td><td>convert the output stringstream to a String --&gt; with these parameters parsing the XML into the property tree.</td></tr>
-    <tr><td class="paramname">connectorTypeS</td><td>create String for copmaring the names of the connectortypes</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>for each loop: run through each value type in a xml-file and get every value in connectors tags save the classtype of the xml attribute into the connector types string for comparing compare the connector types with the enumeration</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xmlWriterSettings</td><td>preparing an xml writer with property tree </td></tr>
-    <tr><td class="paramname">xmlStringStream</td><td>stringstream for writing the xml file writing the xml file with these parameters</td></tr>
-    <tr><td class="paramname">xmlString</td><td>Convert the stringstream to a string replace not needed tags in the xml-file to make it shorter </td></tr>
-    <tr><td class="paramname">*restConnectorConfig</td><td>Create Pointer Rest Connector Config </td></tr>
-    <tr><td class="paramname">xmliStringStream</td><td>Convert the string to a input stringstream for deserialization Deserialize the received xml-config Serialize the deserialized xml-config for testing add the RestConnectorConfig Pointer to the Vector </td></tr>
+    <tr><td class="paramname">*replyConfig</td><td>zmq message, which contains serialized data from the xml-config Receive the serialized data from the xml-config with exception-handling If receiving is failed, unbind and disconnect the sockets Start logging </td></tr>
+    <tr><td class="paramname">*bufConfig</td><td>Buffer with the serialized string from the xml-config </td></tr>
+    <tr><td class="paramname">*tree</td><td>Property tree for deserialize the xml-config </td></tr>
+    <tr><td class="paramname">*convertedSimConfigBuffer</td><td>output stringstream for converting the buffer </td></tr>
+    <tr><td class="paramname">SimConfigString</td><td>convert the output stringstream to a string With these parameters parsing the XML into the property tree. If parsing is failed, unbind and disconnect the sockets Start logging</td></tr>
+    <tr><td class="paramname">connectorTypes</td><td>create String for copmaring the names of the connectortypes </td></tr>
+    <tr><td class="paramname">xmlWriterSettings</td><td>preparing an xml writer with property tree</td></tr>
   </table>
   </dd>
 </dl>
+<p>for each loop: run through each value type in a xml-file and get every value in connectors tags save the classtype of the xml attribute into the connectorTypes string for comparing compare the connector types with the enumeration</p>
+<p >The principle of the deserializing for the three connector are working very similar Exception handling and logging The principle will be explained with RESTDummyConnector: </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">restXMLStringStream</td><td>stringstream for writing the xml file writing the xml file with these parameters </td></tr>
+    <tr><td class="paramname">restXMLString</td><td>Convert the stringstream to a string replace not needed tags in the xml-file to make it shorter </td></tr>
+    <tr><td class="paramname">*restConnectorConfig</td><td>Create Pointer from type RESTConnectorConfig </td></tr>
+    <tr><td class="paramname">xmliStringStream</td><td>Convert the string to a input stringstream for deserialization Deserialize the received RESTDummyConnector from xml-config Create RestConnector object and put it in the queue of the DuTToSim Add it to the interface</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Start logging: shows message which connectors were created </p>
 
 </div>
 </div>
@@ -269,45 +310,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Starts the handler to asynchronously receive incoming events.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p >Starts the handler to asynchronously receive incoming events. while loop: ends, if the thread was stopped </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reply</td><td>zmq message_t, which contains serialized data from the xml-config Receive the serialized simulation data with exception-handling e.g. Speed </td></tr>
-    <tr><td class="paramname">*buf</td><td>Buffer with the serialized string </td></tr>
-    <tr><td class="paramname">input_data_</td><td>Convert the buffer to a String </td></tr>
-    <tr><td class="paramname">*archive_stream</td><td>input stringstream for writing the input_data_ in it </td></tr>
-    <tr><td class="paramname">archive</td><td>input text archive for writing the input stringstream </td></tr>
-    <tr><td class="paramname">receiveMap</td><td>variable map with operations and value e.g. Speed 19,11 </td></tr>
-    <tr><td class="paramname">receiveMapDynmaics</td><td>variable map with dynamic operations and value e.g. Accelaration 13,05 </td></tr>
-    <tr><td class="paramname">connectorTypeS</td><td>create String for copmaring the names of the connectortypes</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>writing the archive into the maps with exception handling</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">keyVector</td><td>Creating vector with keys as Strings </td></tr>
-    <tr><td class="paramname">valueVector</td><td>Creating vector with value as variable datatype</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>for each loop: run through element from the receiveMap add the keys to the keyVector; add value to the valueVector --&gt; same Position</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">keyAsString</td><td>Convert the current key to String </td></tr>
-    <tr><td class="paramname">valueAsAny</td><td>Convert the value key to any datatype </td></tr>
-    <tr><td class="paramname">stringStreamValue</td><td>write the values into an Stringstream </td></tr>
-    <tr><td class="paramname">event</td><td>Create an Simulation Event with these above parameters Send the Simulation Event to the Interface</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>for each loop: run through element from the receiveMapDynamics add the keys to the keyVector; add value to the valueVector --&gt; same Position</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">keyAsString</td><td>Convert the current key to String </td></tr>
-    <tr><td class="paramname">valueAsAny</td><td>Convert the value key to any datatype </td></tr>
-    <tr><td class="paramname">stringStreamValue</td><td>write the values into an Stringstream </td></tr>
-    <tr><td class="paramname">event</td><td>Create an Simulation Event with these above parameters Send the Simulation Event to the Interface </td></tr>
+    <tr><td class="paramname">replySimData</td><td>zmq message, which contains serialized data from the simulation Receive the serialized simulation data e.g. Speed with exception-handling If receiving is failed, unbind and disconnect the sockets Start logging </td></tr>
+    <tr><td class="paramname">*bufSimData</td><td>Buffer with the serialized string </td></tr>
+    <tr><td class="paramname">inputSimData</td><td>Convert the buffer into a string </td></tr>
+    <tr><td class="paramname">*archiveStreamSimData</td><td>for writing the inputSimData </td></tr>
+    <tr><td class="paramname">archiveSimData</td><td>input text archive for writing the inputSimData stringstream </td></tr>
+    <tr><td class="paramname">receiveMapSimData</td><td>variable map with operations and value e.g. speed 13.05 writing the archive into the map with exception handling start logging, if writing failed for each loop: run through element from the receiveMapSimData create for each key and value an event Send the Simulation Event to the Interface </td></tr>
   </table>
   </dd>
 </dl>
@@ -338,6 +348,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr
 
 </div>
 </div>
+<a id="a9e3045aec9762d50b256b8c27058f9ab" name="a9e3045aec9762d50b256b8c27058f9ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e3045aec9762d50b256b8c27058f9ab">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sim_interface::SimComHandler::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >starts the receive method in a own thread </p>
+
+</div>
+</div>
 <a id="a2064c6154aa11da9f9d0c815f45cd270" name="a2064c6154aa11da9f9d0c815f45cd270"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2064c6154aa11da9f9d0c815f45cd270">&#9670;&nbsp;</a></span>sendEventToSim()</h2>
 
@@ -355,15 +383,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr
 </div><div class="memdoc">
 <p >Asynchronous sending of events to simulation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">logSimEvent</td><td>For Logging the SimEvents </td></tr>
     <tr><td class="paramname">simEvent</td><td>An event that should be sent to the simulation. </td></tr>
     <tr><td class="paramname">simEventMap</td><td>A variable Map for events to the Simulation adding keys and values to the simEventMap </td></tr>
-    <tr><td class="paramname">ss</td><td>output stringstream for publishing </td></tr>
-    <tr><td class="paramname">archive</td><td>put the stringstream into the output text archive write the Map to the archive </td></tr>
-    <tr><td class="paramname">outbound_data</td><td>Convert outputstringstream into a string </td></tr>
-    <tr><td class="paramname">msgToSend</td><td>preparing zmq:message type for publish Send message via socket </td></tr>
+    <tr><td class="paramname">simEventsStringStream</td><td>output stringstream for publishing </td></tr>
+    <tr><td class="paramname">archiveSimEvent</td><td>put the stringstream into the output text archive write the Map to the archive </td></tr>
+    <tr><td class="paramname">simEventData</td><td>Convert simEventsStringStream into a string </td></tr>
+    <tr><td class="paramname">msgToSend</td><td>preparing zmq:message type for publishing Send message via socket and start logger for event </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aed124bbab4208d794ab4208468164bf0" name="aed124bbab4208d794ab4208468164bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed124bbab4208d794ab4208468164bf0">&#9670;&nbsp;</a></span>unbindPublisher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sim_interface::SimComHandler::unbindPublisher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >unbind the publisher socket --&gt; to simulation </p>
 
 </div>
 </div>
@@ -373,7 +420,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 20 2021 20:05:35 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Dec 20 2021 21:45:42 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -89,6 +89,7 @@ $(function() {
 <li>changeLogLevel()&#160;:&#160;<a class="el" href="classsim__interface_1_1InterfaceLogger.html#a0e976f9af28e55f5bd1bda4d83a12db4">sim_interface::InterfaceLogger</a></li>
 <li>checkBigEndianness()&#160;:&#160;<a class="el" href="classsim__interface_1_1dut__connector_1_1can_1_1CodecUtilities.html#a86601ae100829e88913995a285d35f4b">sim_interface::dut_connector::can::CodecUtilities</a></li>
 <li>checkForSpecialChars()&#160;:&#160;<a class="el" href="classEventVisitor.html#a2ede9abc8287d445a16bea3317600262">EventVisitor</a></li>
+<li>close()&#160;:&#160;<a class="el" href="classsim__interface_1_1SimComHandler.html#a4c95fd99165395bc2041a7055bc7b1fa">sim_interface::SimComHandler</a></li>
 <li>codecName&#160;:&#160;<a class="el" href="classsim__interface_1_1dut__connector_1_1can_1_1CANConnectorConfig.html#a16afda3ea5aae2fae68caae4e0e08e9f">sim_interface::dut_connector::can::CANConnectorConfig</a></li>
 <li>ConnectorInfo()&#160;:&#160;<a class="el" href="classsim__interface_1_1dut__connector_1_1ConnectorInfo.html#aa730ec35ad692b16ed97ccef4b7038a6">sim_interface::dut_connector::ConnectorInfo</a></li>
 <li>connectorType&#160;:&#160;<a class="el" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">sim_interface::SimComHandler</a></li>
@@ -106,6 +107,8 @@ $(function() {
 <li>DefaultApiImpl()&#160;:&#160;<a class="el" href="classdummy__dut_1_1rest_1_1impl_1_1DefaultApiImpl.html#a19ff6254210bb5b226a7d7adc69add05">dummy_dut::rest::impl::DefaultApiImpl</a></li>
 <li>description&#160;:&#160;<a class="el" href="classsim__interface_1_1dut__connector_1_1ConnectorInfo.html#ab7e9469258a71da202256ebe80224162">sim_interface::dut_connector::ConnectorInfo</a></li>
 <li>deserialize()&#160;:&#160;<a class="el" href="classsim__interface_1_1ConfigSerializer.html#a7d5ab0059466bfdf200dff6a607d70e5">sim_interface::ConfigSerializer</a></li>
+<li>disconnectReceiveConfig()&#160;:&#160;<a class="el" href="classsim__interface_1_1SimComHandler.html#a02de89ef0b01c07a80be3859201af652">sim_interface::SimComHandler</a></li>
+<li>disconnectSubscriber()&#160;:&#160;<a class="el" href="classsim__interface_1_1SimComHandler.html#a9779048b71d82cef9e3590ea6fd19954">sim_interface::SimComHandler</a></li>
 <li>DuTConnector()&#160;:&#160;<a class="el" href="classsim__interface_1_1dut__connector_1_1DuTConnector.html#aa1dee652e906e08bfd4d859284ef8f7e">sim_interface::dut_connector::DuTConnector</a></li>
 </ul>
 
@@ -202,7 +205,7 @@ $(function() {
 <li>replaceAll()&#160;:&#160;<a class="el" href="classEventVisitor.html#a520b999c641b36e55fa0a9336569c9bf">EventVisitor</a></li>
 <li>resolveConnectorTypeForSwitch()&#160;:&#160;<a class="el" href="classsim__interface_1_1SimComHandler.html#a31eb3f0b64b6487c1fafda21f7d12c1d">sim_interface::SimComHandler</a></li>
 <li>RESTDummyConnector()&#160;:&#160;<a class="el" href="classsim__interface_1_1dut__connector_1_1rest__dummy_1_1RESTDummyConnector.html#aafd9bcd0231b23765e11e4bdccf0e22e">sim_interface::dut_connector::rest_dummy::RESTDummyConnector</a></li>
-<li>run()&#160;:&#160;<a class="el" href="classsim__interface_1_1SimToDuTInterface.html#a09dedf083656d44e57032c323873672a">sim_interface::SimToDuTInterface</a></li>
+<li>run()&#160;:&#160;<a class="el" href="classsim__interface_1_1SimComHandler.html#a9e3045aec9762d50b256b8c27058f9ab">sim_interface::SimComHandler</a>, <a class="el" href="classsim__interface_1_1SimToDuTInterface.html#a09dedf083656d44e57032c323873672a">sim_interface::SimToDuTInterface</a></li>
 </ul>
 
 
@@ -234,6 +237,11 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
+<li>unbindPublisher()&#160;:&#160;<a class="el" href="classsim__interface_1_1SimComHandler.html#aed124bbab4208d794ab4208468164bf0">sim_interface::SimComHandler</a></li>
+</ul>
+
+
 <h3><a id="index_v" name="index_v"></a>- v -</h3><ul>
 <li>V2XConnector()&#160;:&#160;<a class="el" href="classsim__interface_1_1dut__connector_1_1v2x_1_1V2XConnector.html#a2a3b956a43cc36e88c1189deea13b191">sim_interface::dut_connector::v2x::V2XConnector</a></li>
 <li>V2XConnectorConfig()&#160;:&#160;<a class="el" href="classsim__interface_1_1dut__connector_1_1v2x_1_1V2XConnectorConfig.html#ade05860b4d11a44b3c6303f751f988f8">sim_interface::dut_connector::v2x::V2XConnectorConfig</a></li>
@@ -256,7 +264,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 20 2021 20:05:35 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Dec 20 2021 21:45:43 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
