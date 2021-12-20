@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">*connectorType</td><td>numeration for the various connectorType RESTDummyConnector CANConnector V2XConnector Invalid_Connector: If the configuration of a connector is invalid in the config.xml </td></tr>
+    <tr><td class="paramname">connectorType</td><td>numeration for the various connectorType RESTDummyConnector CANConnector V2XConnector Invalid_Connector: If the configuration of a connector is invalid in the config.xml </td></tr>
   </table>
   </dd>
 </dl>
@@ -165,7 +165,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Constructor: Create a new handler. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">*interface</td><td>A pointer to communicate with the interface. </td></tr>
+    <tr><td class="paramname">interface</td><td>A pointer to communicate with the interface. </td></tr>
     <tr><td class="paramname">config</td><td>System configuration. </td></tr>
     <tr><td class="paramname">socketSimPub_</td><td>Create socket for publishing messages to simulation </td></tr>
     <tr><td class="paramname">socketSimSub_</td><td>Create socket for subscribing messages from simulation </td></tr>
@@ -272,10 +272,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">*replyConfig</td><td>zmq message, which contains serialized data from the xml-config Receive the serialized data from the xml-config with exception-handling If receiving is failed, unbind and disconnect the sockets Start logging </td></tr>
-    <tr><td class="paramname">*bufConfig</td><td>Buffer with the serialized string from the xml-config </td></tr>
-    <tr><td class="paramname">*tree</td><td>Property tree for deserialize the xml-config </td></tr>
-    <tr><td class="paramname">*convertedSimConfigBuffer</td><td>output stringstream for converting the buffer </td></tr>
+    <tr><td class="paramname">replyConfig</td><td>zmq message, which contains serialized data from the xml-config Receive the serialized data from the xml-config with exception-handling If receiving is failed, unbind and disconnect the sockets Start logging </td></tr>
+    <tr><td class="paramname">bufConfig</td><td>Buffer with the serialized string from the xml-config </td></tr>
+    <tr><td class="paramname">tree</td><td>Property tree for deserialize the xml-config </td></tr>
+    <tr><td class="paramname">convertedSimConfigBuffer</td><td>output stringstream for converting the buffer </td></tr>
     <tr><td class="paramname">SimConfigString</td><td>convert the output stringstream to a string With these parameters parsing the XML into the property tree. If parsing is failed, unbind and disconnect the sockets Start logging</td></tr>
     <tr><td class="paramname">connectorTypes</td><td>create String for copmaring the names of the connectortypes </td></tr>
     <tr><td class="paramname">xmlWriterSettings</td><td>preparing an xml writer with property tree</td></tr>
@@ -287,7 +287,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">restXMLStringStream</td><td>stringstream for writing the xml file writing the xml file with these parameters </td></tr>
     <tr><td class="paramname">restXMLString</td><td>Convert the stringstream to a string replace not needed tags in the xml-file to make it shorter </td></tr>
-    <tr><td class="paramname">*restConnectorConfig</td><td>Create Pointer from type RESTConnectorConfig </td></tr>
+    <tr><td class="paramname">restConnectorConfig</td><td>Create Pointer from type RESTConnectorConfig </td></tr>
     <tr><td class="paramname">xmliStringStream</td><td>Convert the string to a input stringstream for deserialization Deserialize the received RESTDummyConnector from xml-config Create RestConnector object and put it in the queue of the DuTToSim Add it to the interface</td></tr>
   </table>
   </dd>
@@ -313,9 +313,9 @@ Public Member Functions</h2></td></tr>
 <p >Starts the handler to asynchronously receive incoming events. while loop: ends, if the thread was stopped </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">replySimData</td><td>zmq message, which contains serialized data from the simulation Receive the serialized simulation data e.g. Speed with exception-handling If receiving is failed, unbind and disconnect the sockets Start logging </td></tr>
-    <tr><td class="paramname">*bufSimData</td><td>Buffer with the serialized string </td></tr>
+    <tr><td class="paramname">bufSimData</td><td>Buffer with the serialized string </td></tr>
     <tr><td class="paramname">inputSimData</td><td>Convert the buffer into a string </td></tr>
-    <tr><td class="paramname">*archiveStreamSimData</td><td>for writing the inputSimData </td></tr>
+    <tr><td class="paramname">archiveStreamSimData</td><td>for writing the inputSimData </td></tr>
     <tr><td class="paramname">archiveSimData</td><td>input text archive for writing the inputSimData stringstream </td></tr>
     <tr><td class="paramname">receiveMapSimData</td><td>variable map with operations and value e.g. speed 13.05 writing the archive into the map with exception handling start logging, if writing failed for each loop: run through element from the receiveMapSimData create for each key and value an event Send the Simulation Event to the Interface </td></tr>
   </table>
@@ -341,7 +341,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >function for checking the various connector types in the config file </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">*connectorTypeS</td><td>String for comparing the name of the connector types in the config.xml </td></tr>
+    <tr><td class="paramname">connectorTypeS</td><td>String for comparing the name of the connector types in the config.xml </td></tr>
   </table>
   </dd>
 </dl>
@@ -420,7 +420,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 20 2021 21:45:42 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Dec 20 2021 22:04:39 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
