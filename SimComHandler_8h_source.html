@@ -71,76 +71,76 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#ifndef SIM_TO_DUT_INTERFACE_SIMCOMHANDLER_H</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define SIM_TO_DUT_INTERFACE_SIMCOMHANDLER_H</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#include &quot;../Events/SimEvent.h&quot;</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#include &quot;../SystemConfig.h&quot;</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#include &quot;../SimToDuTInterface.h&quot;</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#include &lt;zmq.hpp&gt;</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifndef SIM_TO_DUT_INTERFACE_SIMCOMHANDLER_H</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define SIM_TO_DUT_INTERFACE_SIMCOMHANDLER_H</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#include &quot;../Events/SimEvent.h&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#include &quot;../SystemConfig.h&quot;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#include &quot;../SimToDuTInterface.h&quot;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#include &lt;zmq.hpp&gt;</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacesim__interface.html">sim_interface</a> {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// Forward declaration to avoid looping</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">class </span>SimToDuTInterface;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html">   76</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classsim__interface_1_1SimComHandler.html">SimComHandler</a> {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a6bd615be2608daf0f08aee72bba7d46e">   98</a></span>        <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#a6bd615be2608daf0f08aee72bba7d46e">SimComHandler</a>(<a class="code hl_class" href="classsim__interface_1_1SimToDuTInterface.html">SimToDuTInterface</a> *interface, <span class="keyword">const</span> <a class="code hl_class" href="classsim__interface_1_1SystemConfig.html">SystemConfig</a> &amp;config);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#adc0dc288964e1c31b4ac629ec6a6fb68">  103</a></span>        <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#adc0dc288964e1c31b4ac629ec6a6fb68">~SimComHandler</a>();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a2064c6154aa11da9f9d0c815f45cd270">  117</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#a2064c6154aa11da9f9d0c815f45cd270">sendEventToSim</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsim__interface_1_1SimEvent.html">SimEvent</a> &amp;simEvent);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a14769a0b81dea6d141261acc2405f333">  158</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#a14769a0b81dea6d141261acc2405f333">receive</a>();</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#abe798afe1d329de098c0740feb3e0c89">  195</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#abe798afe1d329de098c0740feb3e0c89">getConfig</a>();</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacesim__interface.html">sim_interface</a> {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Forward declaration to avoid looping</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">class </span>SimToDuTInterface;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html">   77</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classsim__interface_1_1SimComHandler.html">SimComHandler</a> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a6bd615be2608daf0f08aee72bba7d46e">   99</a></span>        <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#a6bd615be2608daf0f08aee72bba7d46e">SimComHandler</a>(<a class="code hl_class" href="classsim__interface_1_1SimToDuTInterface.html">SimToDuTInterface</a> *interface, <span class="keyword">const</span> <a class="code hl_class" href="classsim__interface_1_1SystemConfig.html">SystemConfig</a> &amp;config);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#adc0dc288964e1c31b4ac629ec6a6fb68">  104</a></span>        <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#adc0dc288964e1c31b4ac629ec6a6fb68">~SimComHandler</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a2064c6154aa11da9f9d0c815f45cd270">  118</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#a2064c6154aa11da9f9d0c815f45cd270">sendEventToSim</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsim__interface_1_1SimEvent.html">SimEvent</a> &amp;simEvent);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a14769a0b81dea6d141261acc2405f333">  159</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#a14769a0b81dea6d141261acc2405f333">receive</a>();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#abe798afe1d329de098c0740feb3e0c89">  196</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#abe798afe1d329de098c0740feb3e0c89">getConfig</a>();</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">  206</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">connectorType</a> {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            RESTDummyConnector,</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            CANConnector,</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            V2XConnector,</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            Invalid_Connector</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        };</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a31eb3f0b64b6487c1fafda21f7d12c1d">  217</a></span>        <a class="code hl_enumeration" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">connectorType</a> <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#a31eb3f0b64b6487c1fafda21f7d12c1d">resolveConnectorTypeForSwitch</a>(std::string connectorTypeS);</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="keywordtype">void</span> run();</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="keywordtype">void</span> unbind();</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keywordtype">void</span> disconnect();</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="keywordtype">void</span> close();</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">  207</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">connectorType</a> {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            RESTDummyConnector,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            CANConnector,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            V2XConnector,</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            Invalid_Connector</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        };</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="classsim__interface_1_1SimComHandler.html#a31eb3f0b64b6487c1fafda21f7d12c1d">  218</a></span>        <a class="code hl_enumeration" href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">connectorType</a> <a class="code hl_function" href="classsim__interface_1_1SimComHandler.html#a31eb3f0b64b6487c1fafda21f7d12c1d">resolveConnectorTypeForSwitch</a>(std::string connectorTypeS);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordtype">void</span> run();</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordtype">void</span> unbind();</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordtype">void</span> disconnect();</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <span class="keywordtype">void</span> close();</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <span class="keywordtype">void</span> sendEventToInterface(<span class="keyword">const</span> <a class="code hl_class" href="classsim__interface_1_1SimEvent.html">SimEvent</a> &amp;simEvent);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        zmq::socket_t socketSimSub_;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        zmq::socket_t socketSimPub_;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        zmq::socket_t socketSimSubConfig_;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        std::string socketSimAddressSub;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        std::string socketSimAddressPub;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        std::string socketSimAddressReceiverConfig;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        std::thread simComHandlerThread;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordtype">bool</span> stopThread = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <a class="code hl_class" href="classsim__interface_1_1SimToDuTInterface.html">SimToDuTInterface</a> *interface;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    };</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>}</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#endif </span><span class="comment">//SIM_TO_DUT_INTERFACE_SIMCOMHANDLER_H</span></div>
-<div class="ttc" id="aclasssim__interface_1_1SimComHandler_html"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html">sim_interface::SimComHandler</a></div><div class="ttdoc">Handler between interface and simulation. Responsible for sending/receiving SimEvents to/from the sim...</div><div class="ttdef"><b>Definition:</b> SimComHandler.h:76</div></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keywordtype">void</span> sendEventToInterface(<span class="keyword">const</span> <a class="code hl_class" href="classsim__interface_1_1SimEvent.html">SimEvent</a> &amp;simEvent);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        zmq::socket_t socketSimSub_;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        zmq::socket_t socketSimPub_;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        zmq::socket_t socketSimSubConfig_;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        std::string socketSimAddressSub;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        std::string socketSimAddressPub;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        std::string socketSimAddressReceiverConfig;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        std::thread simComHandlerThread;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordtype">bool</span> stopThread = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <a class="code hl_class" href="classsim__interface_1_1SimToDuTInterface.html">SimToDuTInterface</a> *interface;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    };</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>}</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">#endif </span><span class="comment">//SIM_TO_DUT_INTERFACE_SIMCOMHANDLER_H</span></div>
+<div class="ttc" id="aclasssim__interface_1_1SimComHandler_html"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html">sim_interface::SimComHandler</a></div><div class="ttdoc">Handler between interface and simulation. Responsible for sending/receiving SimEvents to/from the sim...</div><div class="ttdef"><b>Definition:</b> SimComHandler.h:77</div></div>
 <div class="ttc" id="aclasssim__interface_1_1SimComHandler_html_a14769a0b81dea6d141261acc2405f333"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html#a14769a0b81dea6d141261acc2405f333">sim_interface::SimComHandler::receive</a></div><div class="ttdeci">void receive()</div></div>
 <div class="ttc" id="aclasssim__interface_1_1SimComHandler_html_a2064c6154aa11da9f9d0c815f45cd270"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html#a2064c6154aa11da9f9d0c815f45cd270">sim_interface::SimComHandler::sendEventToSim</a></div><div class="ttdeci">void sendEventToSim(const SimEvent &amp;simEvent)</div></div>
 <div class="ttc" id="aclasssim__interface_1_1SimComHandler_html_a31eb3f0b64b6487c1fafda21f7d12c1d"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html#a31eb3f0b64b6487c1fafda21f7d12c1d">sim_interface::SimComHandler::resolveConnectorTypeForSwitch</a></div><div class="ttdeci">connectorType resolveConnectorTypeForSwitch(std::string connectorTypeS)</div></div>
 <div class="ttc" id="aclasssim__interface_1_1SimComHandler_html_a6bd615be2608daf0f08aee72bba7d46e"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html#a6bd615be2608daf0f08aee72bba7d46e">sim_interface::SimComHandler::SimComHandler</a></div><div class="ttdeci">SimComHandler(SimToDuTInterface *interface, const SystemConfig &amp;config)</div></div>
-<div class="ttc" id="aclasssim__interface_1_1SimComHandler_html_a89835eda4c218efac743f93ea015dbab"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">sim_interface::SimComHandler::connectorType</a></div><div class="ttdeci">connectorType</div><div class="ttdef"><b>Definition:</b> SimComHandler.h:206</div></div>
+<div class="ttc" id="aclasssim__interface_1_1SimComHandler_html_a89835eda4c218efac743f93ea015dbab"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html#a89835eda4c218efac743f93ea015dbab">sim_interface::SimComHandler::connectorType</a></div><div class="ttdeci">connectorType</div><div class="ttdef"><b>Definition:</b> SimComHandler.h:207</div></div>
 <div class="ttc" id="aclasssim__interface_1_1SimComHandler_html_abe798afe1d329de098c0740feb3e0c89"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html#abe798afe1d329de098c0740feb3e0c89">sim_interface::SimComHandler::getConfig</a></div><div class="ttdeci">void getConfig()</div></div>
 <div class="ttc" id="aclasssim__interface_1_1SimComHandler_html_adc0dc288964e1c31b4ac629ec6a6fb68"><div class="ttname"><a href="classsim__interface_1_1SimComHandler.html#adc0dc288964e1c31b4ac629ec6a6fb68">sim_interface::SimComHandler::~SimComHandler</a></div><div class="ttdeci">~SimComHandler()</div></div>
 <div class="ttc" id="aclasssim__interface_1_1SimEvent_html"><div class="ttname"><a href="classsim__interface_1_1SimEvent.html">sim_interface::SimEvent</a></div><div class="ttdoc">Event object used to communicate between simulation and DuTs.</div><div class="ttdef"><b>Definition:</b> SimEvent.h:47</div></div>
@@ -150,7 +150,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 20 2021 19:34:24 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Dec 20 2021 19:51:23 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
