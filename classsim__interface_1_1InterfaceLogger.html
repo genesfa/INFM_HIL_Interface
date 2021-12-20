@@ -74,6 +74,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Logger to log to file, console and as structured data csv  
+ <a href="classsim__interface_1_1InterfaceLogger.html#details">More...</a></p>
+
 <p><code>#include &lt;InterfaceLogger.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -90,7 +93,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:adc8424929eb2a4385c110c0d3d0ae9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This logger is a tool with specialized functions to log and store messages for all elements of the Sim_To_DuT_Interface. The logger and all of it's functions are static so it's not necessary to create instances of the logger to write a message. Please notice that the logger has to be initialised in a first call by a valid configuration before using it.</p>
+<div class="textblock"><p >Logger to log to file, console and as structured data csv </p>
+<p >This logger is a tool with specialized functions to log and store messages for all elements of the Sim_To_DuT_Interface. The logger and all of it's functions are static so it's not necessary to create instances of the logger to write a message. Please notice that the logger has to be initialised in a first call by a valid configuration before using it.</p>
 <p >With logger's functionality it's possible to log messages and events during the execution.</p>
 <p >The logger will create files if necessary in which the messages will be stored. The message provider can choose if the message should be logged in the file or not. The logger notices old logfiles and will remove them if the real number of logfiles is higher than the configured backup count.</p>
 <dl class="section author"><dt>Author</dt><dd>Marco Keul </dd></dl>
@@ -240,7 +244,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Logs the message with consideration of the log level. Please notice that this function will also log the message into a logfile if the file logger accepts the log level. If you explicitly don't want to log this message into the logfile, please use the function below.</p>
-<dl class="section see"><dt>See also</dt><dd>void InterfaceLogger::logMessage(std::string msg, LOG_LEVEL level, bool doNotWriteIntoFile) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>void <a class="el" href="classsim__interface_1_1InterfaceLogger.html#aca49784cee6425cf2be38471f35dcb45">InterfaceLogger::logMessage(const std::string &amp;msg, LOG_LEVEL level, bool writeToFile)</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">msg</td><td>message that should be logged </td></tr>
@@ -309,7 +313,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 19 2021 20:35:30 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Dec 20 2021 11:47:02 for INFM HIL Interface by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
